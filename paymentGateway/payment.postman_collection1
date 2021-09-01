@@ -1,0 +1,154 @@
+{
+	"info": {
+		"_postman_id": "4e6b86e6-3523-44d2-afc3-601aecaee6cb",
+		"name": "payment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getpayment",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "sk_test_51JUTMXSJuSXF3ti0nvxqS4IAib0b3jx86iCMpEjAe9Zfr7ZwWgJuF3HG2NBlGTJSZ7KY8AWJuBpp9pkRRjzhSrai000FltXRyn",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer sk_test_51JUTMXSJuSXF3ti0nvxqS4IAib0b3jx86iCMpEjAe9Zfr7ZwWgJuF3HG2NBlGTJSZ7KY8AWJuBpp9pkRRjzhSrai000FltXRyn",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n \"stripeCustomerID\": \"cus_K8sPNXxVUhjAL1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://blooming-falls-44557.herokuapp.com/api/payments/cus_K8sPNXxVUhjAL1",
+					"protocol": "https",
+					"host": [
+						"blooming-falls-44557",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"payments",
+						"cus_K8sPNXxVUhjAL1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/payments",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "sk_test_51JUTMXSJuSXF3ti0nvxqS4IAib0b3jx86iCMpEjAe9Zfr7ZwWgJuF3HG2NBlGTJSZ7KY8AWJuBpp9pkRRjzhSrai000FltXRyn",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer sk_test_51JUTMXSJuSXF3ti0nvxqS4IAib0b3jx86iCMpEjAe9Zfr7ZwWgJuF3HG2NBlGTJSZ7KY8AWJuBpp9pkRRjzhSrai000FltXRyn",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n \"stripeCustomerID\": \"cus_K8sPNXxVUhjAL1\",\n \t\"amount\": 700\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://blooming-falls-44557.herokuapp.com/api/payments",
+					"protocol": "https",
+					"host": [
+						"blooming-falls-44557",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"payments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/customer",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "sk_test_51JUTMXSJuSXF3ti0nvxqS4IAib0b3jx86iCMpEjAe9Zfr7ZwWgJuF3HG2NBlGTJSZ7KY8AWJuBpp9pkRRjzhSrai000FltXRyn",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer sk_test_51JUTMXSJuSXF3ti0nvxqS4IAib0b3jx86iCMpEjAe9Zfr7ZwWgJuF3HG2NBlGTJSZ7KY8AWJuBpp9pkRRjzhSrai000FltXRyn",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\":\"token@gmail.com\",\n    \"stripeCreditCardToken\":\"hghghg5636737\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://blooming-falls-44557.herokuapp.com/api/customer",
+					"protocol": "https",
+					"host": [
+						"blooming-falls-44557",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"customer"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

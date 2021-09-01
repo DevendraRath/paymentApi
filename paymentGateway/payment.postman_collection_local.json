@@ -1,0 +1,197 @@
+{
+	"info": {
+		"_postman_id": "d6a1764f-8181-4dc6-af35-afe4e8e5538d",
+		"name": "payment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:3008/api/payments/cus_K8sPNXxVUhjAL1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "sk_test_51JUTMXSJuSXF3ti0nvxqS4IAib0b3jx86iCMpEjAe9Zfr7ZwWgJuF3HG2NBlGTJSZ7KY8AWJuBpp9pkRRjzhSrai000FltXRyn",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer sk_test_51JUTMXSJuSXF3ti0nvxqS4IAib0b3jx86iCMpEjAe9Zfr7ZwWgJuF3HG2NBlGTJSZ7KY8AWJuBpp9pkRRjzhSrai000FltXRyn",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n \"stripeCustomerID\": \"cus_K8sPNXxVUhjAL1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3008/api/payments/cus_K8sPNXxVUhjAL1",
+					"host": [
+						"localhost"
+					],
+					"port": "3008",
+					"path": [
+						"api",
+						"payments",
+						"cus_K8sPNXxVUhjAL1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get customer list",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "sk_test_51JUTMXSJuSXF3ti0nvxqS4IAib0b3jx86iCMpEjAe9Zfr7ZwWgJuF3HG2NBlGTJSZ7KY8AWJuBpp9pkRRjzhSrai000FltXRyn",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer sk_test_51JUTMXSJuSXF3ti0nvxqS4IAib0b3jx86iCMpEjAe9Zfr7ZwWgJuF3HG2NBlGTJSZ7KY8AWJuBpp9pkRRjzhSrai000FltXRyn",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n \"stripeCustomerID\": \"cus_K8sPNXxVUhjAL1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3008/api/payments/cus_K8sPNXxVUhjAL1",
+					"host": [
+						"localhost"
+					],
+					"port": "3008",
+					"path": [
+						"api",
+						"payments",
+						"cus_K8sPNXxVUhjAL1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3008/api/payments",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "sk_test_51JUTMXSJuSXF3ti0nvxqS4IAib0b3jx86iCMpEjAe9Zfr7ZwWgJuF3HG2NBlGTJSZ7KY8AWJuBpp9pkRRjzhSrai000FltXRyn",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer sk_test_51JUTMXSJuSXF3ti0nvxqS4IAib0b3jx86iCMpEjAe9Zfr7ZwWgJuF3HG2NBlGTJSZ7KY8AWJuBpp9pkRRjzhSrai000FltXRyn",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n \"stripeCustomerID\": \"cus_K8sPNXxVUhjAL1\",\n \t\"amount\": 700\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3008/api/payments",
+					"host": [
+						"localhost"
+					],
+					"port": "3008",
+					"path": [
+						"api",
+						"payments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3008/api/customer",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "sk_test_51JUTMXSJuSXF3ti0nvxqS4IAib0b3jx86iCMpEjAe9Zfr7ZwWgJuF3HG2NBlGTJSZ7KY8AWJuBpp9pkRRjzhSrai000FltXRyn",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer sk_test_51JUTMXSJuSXF3ti0nvxqS4IAib0b3jx86iCMpEjAe9Zfr7ZwWgJuF3HG2NBlGTJSZ7KY8AWJuBpp9pkRRjzhSrai000FltXRyn",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\":\"token@gmail.com\",\n    \"stripeCreditCardToken\":\"hghghg5636737\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3008/api/customer",
+					"host": [
+						"localhost"
+					],
+					"port": "3008",
+					"path": [
+						"api",
+						"customer"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
